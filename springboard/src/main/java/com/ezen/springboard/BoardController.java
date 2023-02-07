@@ -61,7 +61,7 @@ public class BoardController {
 		model.addAttribute("boards", board_mapper.getListAll().subList(start_index, end_index));
 		model.addAttribute("pagination_start", pagination_start);
 		model.addAttribute("pagination_end", pagination_end);
-
+		// service로 변경해보기
 		return "board/list";
 	}
 
